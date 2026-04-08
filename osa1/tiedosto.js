@@ -8,6 +8,8 @@ y = "teksti";
 console.log(x, y);
 // x = 4;
 
+// taulukot
+
 const t = [1, -1, 3];
 console.log(t.length);
 t.push(5);
@@ -33,3 +35,33 @@ const t5 = [1, 2, 3, 4, 5];
 const [first, second, ...rest] = t5;
 console.log(first, second);
 console.log(rest);
+
+// Oliot
+
+const object1 = {
+	name: "Arto Hellas",
+	age: 35,
+	education: "Filosofian tohtori",
+};
+
+const object2 = {
+	name: "Full Stack -websovelluskehitys",
+	level: "aineopinto",
+	size: 5,
+};
+
+const object3 = {
+	name: {
+		first: "Juha",
+		last: "Tauriainen",
+	},
+	grader: [2, 3, 5, 3],
+	department: "TKTL",
+};
+
+console.log(object1.name);
+const fieldName = "age";
+console.log(object1[fieldName]);
+object1.address = "Tapiola";
+object1["secret number"] = 1234;
+console.log(object1);
