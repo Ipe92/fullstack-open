@@ -65,3 +65,34 @@ console.log(object1[fieldName]);
 object1.address = "Tapiola";
 object1["secret number"] = 1234;
 console.log(object1);
+
+// Funktiot
+
+const sum = (p1, p2) => {
+	console.log(p1);
+	console.log(p2);
+	return p1 + p2;
+};
+
+const result = sum(1, 5);
+console.log(result);
+
+const square = (p) => {
+	console.log(p);
+	return p * p;
+};
+
+const square2 = (p) => p * p;
+
+const tt = [1, 2, 3];
+const tSquared = tt.map((p) => p * p);
+
+function product(a, b) {
+	return a * b;
+}
+
+const average = function (a, b) {
+	return (a + b) / 2;
+};
+
+const vastaus = average(2, 5);
