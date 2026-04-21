@@ -22,9 +22,9 @@ const App = () => {
 	const [neutral, setNeutral] = useState(0);
 	const [bad, setBad] = useState(0);
 
-	const feedBackAmount = good + bad + neutral;
-	const calculateAverage = () => (good - bad) / feedBackAmount;
-	const calculatePositive = () => good / feedBackAmount;
+	// const feedBackAmount = good + bad + neutral;
+	// const calculateAverage = () => (good - bad) / feedBackAmount;
+	// const calculatePositive = () => good / feedBackAmount;
 
 	return (
 		<div>
@@ -32,12 +32,7 @@ const App = () => {
 			<Button onClick={() => setNeutral(neutral + 1)} text="neutral" />
 			<Button onClick={() => setBad(bad + 1)} text="bad" />
 			<h1>statistics</h1>
-			<p>good {good}</p>
-			<p>neutral {neutral}</p>
-			<p>bad {bad}</p>
-			<p>all {good + bad + neutral}</p>
-			<p>average {calculateAverage()}</p>
-			<p>positive {calculatePositive()}%</p>
+			<Statistics good={good} neutral={neutral} bad={bad} />
 		</div>
 	);
 };
